@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimeToGoHomeController">
+   <children>
+      <Label layoutX="84.0" layoutY="43.0" text="Time To Go Home!">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="256.0" fitWidth="256.0" layoutX="122.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1441913099_home.png" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="245.0" layoutY="439.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="55.0">
+        <buttons>
+          <Button accessibleHelp="2" accessibleRoleDescription="3" accessibleText="1" mnemonicParsing="false" onAction="#handleSnooze" text="Snooze">
+               <tooltip>
+                  <Tooltip text="Remind Me In 2 Minutes" />
+               </tooltip></Button>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleOk" text="OK">
+               <tooltip>
+                  <Tooltip text="Restore Previous Desktop" />
+               </tooltip></Button>
+        </buttons>
+      </ButtonBar>
+      <Separator layoutX="55.0" layoutY="423.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>
